@@ -1,6 +1,8 @@
 package main
 
 // 1. open the file
+// 	1-1 open the txt file (o)
+// 	1-2 open the .docx file (--)
 // 2. read the contents of the file
 // 3. extract and rebuild the contents
 
@@ -9,7 +11,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func extracting() {
 	// read the file
 	fi, err := os.Open("path_for_file")
 	if err != nil {
